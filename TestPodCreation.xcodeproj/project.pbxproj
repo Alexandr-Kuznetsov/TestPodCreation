@@ -17,6 +17,8 @@
 		529719232B0646A000F6A769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529719212B0646A000F6A769 /* Main.storyboard */; };
 		529719252B0646A100F6A769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529719242B0646A100F6A769 /* Assets.xcassets */; };
 		529719282B0646A100F6A769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529719262B0646A100F6A769 /* LaunchScreen.storyboard */; };
+		529719302B064B6600F6A769 /* FunctionalityFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297192F2B064B6600F6A769 /* FunctionalityFactory.swift */; };
+		529719332B064C7E00F6A769 /* FunctionalityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529719322B064C7E00F6A769 /* FunctionalityTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		529719242B0646A100F6A769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		529719272B0646A100F6A769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		529719292B0646A100F6A769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5297192F2B064B6600F6A769 /* FunctionalityFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalityFactory.swift; sourceTree = "<group>"; };
+		529719322B064C7E00F6A769 /* FunctionalityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalityTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		529718FD2B0645E100F6A769 /* TestPodCreation */ = {
 			isa = PBXGroup;
 			children = (
+				5297192E2B064B4C00F6A769 /* Public */,
+				5297192D2B064B3F00F6A769 /* Private */,
 				529718FE2B0645E100F6A769 /* TestPodCreation.h */,
 				529718FF2B0645E100F6A769 /* TestPodCreation.docc */,
 			);
@@ -104,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				5297190A2B0645E200F6A769 /* TestPodCreationTests.swift */,
+				529719322B064C7E00F6A769 /* FunctionalityTests.swift */,
 			);
 			path = TestPodCreationTests;
 			sourceTree = "<group>";
@@ -120,6 +127,21 @@
 				529719292B0646A100F6A769 /* Info.plist */,
 			);
 			path = TestPodCreationExample;
+			sourceTree = "<group>";
+		};
+		5297192D2B064B3F00F6A769 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		5297192E2B064B4C00F6A769 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				5297192F2B064B6600F6A769 /* FunctionalityFactory.swift */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529719302B064B6600F6A769 /* FunctionalityFactory.swift in Sources */,
 				529719002B0645E100F6A769 /* TestPodCreation.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5297190B2B0645E200F6A769 /* TestPodCreationTests.swift in Sources */,
+				529719332B064C7E00F6A769 /* FunctionalityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +535,7 @@
 		529719132B0645E200F6A769 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -530,6 +555,7 @@
 		529719142B0645E200F6A769 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
